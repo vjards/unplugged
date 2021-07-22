@@ -87,6 +87,115 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*------BASE HEADER AND FOOTER STYLES-------*/
+header, footer{
+  display:flex;
+  justify-content:center;
+  flex-flow:row wrap;
+}
+
+header .content-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+header nav{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+header nav ul{
+  display:flex;
+  justify-content:space-around;
+
+}
+
+footer .social-icons{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+footer p{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+/*------MOBILE STYLES---------*/
+
+/*---HERO STYLE---*/
+.hero-area{
+  display:flex;
+  justify-content:center;
+  flex-flow:row wrap;
+}
+
+/*----ASIDE----*/
+aside{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+/*----FEATURES----*/
+.features{
+  display:flex;
+  justify-content:center;
+  flex-flow: row wrap;
+}
+
+.features .features-items{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+/*----REVIEWS----*/
+.reviews{
+  display:flex;
+  justify-content:center;
+  flex-flow:row wrap;
+}
+
+
+/*----MISSION----*/
+.mission{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+/*----FAQ----*/
+.faq{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+.faq content-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+/*----CONTACT---*/
+.contact-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
