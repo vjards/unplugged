@@ -137,6 +137,7 @@ textarea {
    
   address {
     font-style:normal;
+    
   }
 
   .content-wrapper{
@@ -144,8 +145,9 @@ textarea {
     margin:50px 0;
   }
 
+  
 
-/*------BASE HEADER AND FOOTER STYLES-------*/
+/*---------------------BASE HEADER AND FOOTER STYLES-------------------*/
 
 header, footer{
   display:flex;
@@ -156,6 +158,7 @@ header, footer{
 
 header{
   padding:15px 0;
+  background-color: #2a423a;
 }
 
 header .content-wrapper{
@@ -172,13 +175,14 @@ header nav{
   align-items:center;
   flex-flow:row wrap;
   width:60%;
+ 
 }
 
 header nav ul{
   display:flex;
   justify-content:space-around;
   width:100%;
-
+  font-weight:700;
 }
 
 .header-divider{
@@ -189,6 +193,8 @@ header nav ul{
 
 footer{
   flex-direction:column;
+  background-color: #2a423a;
+  color:white;
 }
 
 footer .social-icons{
@@ -207,6 +213,10 @@ footer p{
  margin: 0;
 }
 
+footer h4{
+  font-weight:500;
+}
+
 footer .content-wrapper{
   width:55%;
   margin:50px 0;
@@ -218,13 +228,20 @@ footer .contact{
 footer .copyright{
   margin:20px 0;
 }
-/*------MOBILE HOMEPAGE---------*/
+/*----------------MOBILE STYLES-HOMEPAGE--------------------*/
 
 /*---HERO STYLE---*/
 .hero-area{
   display:flex;
   justify-content:center;
   flex-flow:row wrap;
+  color:whitesmoke;
+}
+.hero-area h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight:500;
+  line-height:1.5;
+  font-size:2.25em;
 }
 
 /*----ASIDE----*/
@@ -233,8 +250,38 @@ aside{
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
+  background-color:#527158;
+  color:white;
+}
+aside .form {
+  margin-top: 30px;
 }
 
+aside h3{
+  font-weight:500;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /*----FEATURES----*/
 .features{
   display:flex;
@@ -251,7 +298,9 @@ aside{
 
 .features h2{
   margin-bottom:60px;
+  font-weight:500;
 }
+
 .features .features-items{
   display:flex;
   justify-content:center;
@@ -264,40 +313,53 @@ aside{
   display:flex;
   justify-content:center;
   flex-flow:row wrap;
+  background-color:#527158;
+  color:white;
 }
 
 .reviews h2{
   margin-bottom:40px;
+  font-weight:500;
 }
 
 .reviews h3{
   width: 55%;
   margin: 20px 0;
+  font-weight:500;
 }
 
-/*----ABOUT PAGE----*/
+/*=====================================================
+ABOUT PAGE
+=======================================================*/
 .mission{
   display:flex;
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
+  background-color: #527158;
+  color:white;
 }
 .contact-section{
   display:flex;
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
+  background-color: black;
+  color:white;
 }
 .contact-information p{
   margin:0;
 }
-
-/*----FAQ PAGE----*/
+/*===============================================================
+FAQ PAGE
+=================================================================*/
 .faq{
   display:flex;
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
+  background-color: #527158;
+  color:white;
 }
 
 .faq .content-wrapper{
@@ -309,14 +371,17 @@ aside{
 }
 
 .faq h2{
-  margin-bottom:40px;
+ margin-bottom:40px;
+ line-height:1;
 }
 
-.faq content{
-  margin-bottom:50px;
+.faq-content {
+  margin-bottom: 50px;
 }
 
-
+.faq-content h4 {
+  line-height: 1.333;
+}
 
 
 /* ==========================================================================
@@ -528,7 +593,9 @@ aside{
       width: 100%;
   }
   }
-     
+     /*==========================================================
+     DESKTOP STYLES
+     ============================================================*/
     @media only screen and (min-width: 1200px) {
     .content-wrapper{
       max-width: 960px;
@@ -550,6 +617,9 @@ aside .content-wrapper .form {
   width:30%;
 
 }
+.form-description p {
+  font-size: 1.125em;
+}
 
 /* Features */
 .features h2 {
@@ -565,18 +635,26 @@ aside .content-wrapper .form {
   width: 42%;
 }
 
-/*ABOUT PAGE*/
+/*========================================================
+ABOUT PAGE
+========================================================*/
 
 .mission h2,
     .contact-section .content-wrapper h2 {
         width: 95%;
     }
 
-/*FAQ PAGE*/
+/*=====================================================================
+FAQ PAGE
+=======================================================================*/
 .faq h2 {
   width: 100%;
 }
-
+.faq h4,
+.faq p{
+font-size:1.125em;
+line-height:1;
+}
     }
 /* ==========================================================================
    Print styles.
