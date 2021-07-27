@@ -128,11 +128,11 @@ textarea {
   }
    
   img {
-   
+   width:100%;
   }
    
   figure {
-   
+   margin:0;
   }
    
   address {
@@ -191,6 +191,8 @@ header nav ul{
   margin: 10px 0 20px 0;
 }
 
+
+
 footer{
   flex-direction:column;
   background-color: #2a423a;
@@ -230,13 +232,26 @@ footer .copyright{
 }
 /*----------------MOBILE STYLES-HOMEPAGE--------------------*/
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /*---HERO STYLE---*/
 .hero-area{
   display:flex;
   justify-content:center;
   flex-flow:row wrap;
   color:whitesmoke;
-}
+  background: url('../img/camper-girl.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+ }
+
 .hero-area h1{
   font-family: 'Poppins', sans-serif;
   font-weight:500;
@@ -287,6 +302,10 @@ input[type=button] {
   display:flex;
   justify-content:center;
   flex-flow: row wrap;
+  background: url('../img/black-background.jpg');
+  background-size: cover;
+  background-position:center;
+  
 }
 .features p{
   margin: 0;
@@ -299,6 +318,7 @@ input[type=button] {
 .features h2{
   margin-bottom:60px;
   font-weight:500;
+  color:white;
 }
 
 .features .features-items{
@@ -306,6 +326,8 @@ input[type=button] {
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
+  color:white;
+  
 }
 
 /*----REVIEWS----*/
@@ -496,6 +518,10 @@ FAQ PAGE
       width: 160px;
       justify-content:space-between;
     }
+    header figure {
+      width: 30%;
+      
+  }
 
     .header-divider{
       display:none;
@@ -531,13 +557,17 @@ FAQ PAGE
   
     /*REVIEWS*/
     .reviews article{
-      display:flex;
-      justify-content:space-between;
+      display: flex;
+      justify-content: space-between;
+     }
+    
+    .reviews h2{
+      width:85%;
     }
-    .reviews article div{
-      width: 49%;
+    .reviews h3{
+      width:75%;
+      margin:0;
     }
-
     /*FOOTER*/
     .footer-content{
       display:flex;
