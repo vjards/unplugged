@@ -150,7 +150,9 @@ textarea {
     margin:50px 0;
   }
 
-  
+  .social i{
+    font-size:2.75em;
+  }
 
 /*---------------------BASE HEADER AND FOOTER STYLES-------------------*/
 
@@ -199,6 +201,7 @@ header nav ul{
 
 
 footer{
+  text-align: center;
   flex-direction:column;
   background-color: #2a423a;
   color:white;
@@ -208,12 +211,18 @@ footer .social-icons{
   display:flex;
   justify-content:space-around;
   align-items:center;
+  
 }
 
 footer .social-icons p{
   display:flex;
   justify-content:space-around;
   align-items:center;
+  margin:10px;
+  border-radius: 50%;
+  background-color: #527158;
+  width:40px;
+  height:40px;
 }
 
 footer p{
@@ -222,7 +231,13 @@ footer p{
 
 footer h4{
   font-weight:500;
+  padding:10px;
 }
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
 
 footer .content-wrapper{
   width:55%;
