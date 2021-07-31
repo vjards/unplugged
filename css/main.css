@@ -196,9 +196,8 @@ header nav ul{
   width:100%;
   height:1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a; 
 }
-
-
 
 footer{
   text-align: center;
@@ -531,30 +530,45 @@ FAQ PAGE
    Modify as content requires.
    ========================================================================== */
 
+
+   /*============================================================================
+   TABLET STYLES
+   =============================================================================*/
    @media only screen and (min-width: 768px) {
     /*GENERAL STYLES*/
     .content-wrapper{
       max-width:640px;
       margin:100px 0;
     }
-
+   
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
     /*HEADER*/
     header{
       justify-content:space-around;
       padding:33px 0;
     }
-
+    
     header .content-wrapper{
       justify-content:space-between;
       width:100%;
+      
     }
     header nav{
       width:20%;
+      
     }
     header nav ul{
-      width: 160px;
       justify-content:space-between;
     }
+
     header figure {
       width: 30%;
       
@@ -659,9 +673,6 @@ FAQ PAGE
   .contact-section .content-wrapper h2 {
       width:80%;
   }
-
-
-
 
   .contact-content {
       display:flex;
