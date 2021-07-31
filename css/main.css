@@ -182,7 +182,6 @@ header nav{
   align-items:center;
   flex-flow:row wrap;
   width:60%;
- 
 }
 
 header nav ul{
@@ -210,7 +209,6 @@ footer .social-icons{
   display:flex;
   justify-content:space-around;
   align-items:center;
-  
 }
 
 footer .social-icons p{
@@ -235,6 +233,8 @@ footer h4{
 
 footer .social-icons p i {
   font-size: 1.3125em;
+  margin-right:10px;
+  
 }
 
 
@@ -265,7 +265,7 @@ header figure {
   justify-content:center;
   flex-flow:row wrap;
   color:whitesmoke;
-  background: url('../img/camper-girl.jpg');
+  background: url('../img/camping.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center;
@@ -346,7 +346,6 @@ input[type=button] {
   align-items:center;
   flex-flow:row wrap;
   color:white;
-  
 }
 
 /*----REVIEWS----*/
@@ -559,20 +558,23 @@ FAQ PAGE
     header .content-wrapper{
       justify-content:space-between;
       width:100%;
-      
     }
+
     header nav{
       width:20%;
-      
     }
+
     header nav ul{
       justify-content:space-between;
     }
 
+    header nav ul a{
+    margin:10px;
+    }
+
     header figure {
       width: 30%;
-      
-  }
+    }
 
     .header-divider{
       display:none;
@@ -605,7 +607,8 @@ FAQ PAGE
     .features .features-item-description {
       width: 50%;
     }
-  
+
+     
     /*REVIEWS*/
     .reviews article{
       display: flex;
@@ -618,6 +621,10 @@ FAQ PAGE
     .reviews h3{
       width:75%;
       margin:0;
+    }
+
+    .reviews p{
+      font-size: 1.125em;
     }
     /*FOOTER*/
     .footer-content{
@@ -703,20 +710,24 @@ FAQ PAGE
 
     /*HERO*/
     .hero-area h1{
-      width:60%;
+      width:100%;
+      font-size: 3.5em;
     }
 
 /* Aside */
 aside .content-wrapper {
   justify-content: space-around;
-
 }
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
   width:30%;
-
 }
+
+aside h3{
+  font-size: 2em;
+}
+
 .form-description p {
   font-size: 1.125em;
 }
@@ -730,10 +741,21 @@ aside .content-wrapper .form {
   flex-basis: 33%;
 }
 
+.features-item-description{
+  font-size: 1.1em;
+  text-align: center;
+}
+
 /* Reviews */ 
 .reviews article div {
-  width: 42%;
+  width: 100%;
+  margin:10px;
+ 
 }
+.reviews h2 {
+  padding-bottom: 50px; 
+}
+
 
 /*========================================================
 ABOUT PAGE
