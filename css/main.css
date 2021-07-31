@@ -245,6 +245,7 @@ footer .content-wrapper{
 
 footer .contact{
   margin-bottom:50px;
+  font-size:1.125em;
 }
 footer .copyright{
   margin:20px 0;
@@ -764,8 +765,13 @@ ABOUT PAGE
 .mission h2,
     .contact-section .content-wrapper h2 {
         width: 95%;
-    }
-
+      }
+.mission-content p{
+  font-size:1.125em;
+}
+.mission h2{
+  font-weight:lighter;
+}
     .map figure{
       width:100%;
       height:0;
@@ -781,13 +787,19 @@ ABOUT PAGE
       top:0;
       left:0;
       }
-  
+  .contact-content{
+    font-size:1.125em;
+  }
 
 /*=====================================================================
 FAQ PAGE
 =======================================================================*/
 .faq h2 {
   width: 100%;
+  font-weight: normal;
+}
+.faq h3{
+  font-weight: normal;
 }
 .faq h4,
 .faq p{
